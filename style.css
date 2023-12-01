@@ -1,0 +1,326 @@
+@font-face {
+  font-family: chana;
+  src: url(./Fonts/chaney-ultraextended-webfont.ttf);
+}
+@font-face {
+  font-family: no-name;
+  src: url(./Fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.ttf);
+}
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  font-family: chana;
+  position: relative;
+  z-index: 99;
+  background-color: #bbb;
+  animation: pulse 3.5s;
+  position: fixed;
+}
+
+#loader h1 {
+  position: absolute;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.1vh;
+  -webkit-text-stroke-color: #fff;
+  outline: none;
+  font-weight: 200;
+  opacity: 0.8;
+  font-size: 6.5rem;
+  white-space: nowrap;
+  top: 37%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+  transform: rotate(350deg);
+  /* transform: rotatex(100deg); */
+}
+
+#loader h3 {
+  -webkit-text-fill-color: #fff;
+  font-size: 2.5rem;
+  transform: rotate(350deg);
+  letter-spacing: 2px;
+  position: absolute;
+  top: 44%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  transform: rotate(350deg);
+}
+#zoom {
+  width: 55vw;
+  height: 10px;
+  position: absolute;
+  border-radius: 50px;
+  background-color: azure;
+  transform: rotate(350deg);
+  top: 59%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  transform: rotate(350deg);
+  display: inline-block;
+}
+#zoom::after {
+  content: " ";
+  height: 100%;
+  bottom: 10%;
+  border-radius: 4px;
+  position: absolute;
+  animation: load 2.75s;
+}
+@keyframes load {
+  0% {
+    width: 0%;
+    background-color: rgb(246, 105, 105);
+  }
+  25% {
+    width: 25%;
+    background-color: rgb(89, 180, 188);
+  }
+  50% {
+    width: 50%;
+    background-color: rgb(105, 246, 126);
+  }
+  75% {
+    width: 75%;
+    background-color: rgb(217, 232, 85);
+  }
+  100% {
+    width: 100%;
+    background-color: rgb(211, 209, 209);
+  }
+}
+@keyframes pulse {
+  0% {
+    background-color: rgb(246, 105, 105);
+  }
+  25% {
+    background-color: rgb(89, 180, 188);
+  }
+  50% {
+    background-color: rgb(105, 246, 126);
+  }
+  75% {
+    background-color: rgb(217, 232, 85);
+  }
+  100% {
+    background-color: rgb(211, 209, 209);
+  }
+}
+
+/* //////////loader-2///////////// */
+
+#loader2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Images/back1.jpg);
+  z-index: 9;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-repeat: no-repeat; */
+  overflow: hidden;
+  position: relative;
+}
+#back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transform: scale(1.5);
+}
+.letter,
+#btn {
+  position: absolute;
+  width: 15%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+#back2 {
+  z-index: 1;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.id1 {
+  left: 30% !important;
+  top: 15% !important;
+  transform: rotate(7deg);
+}
+.id2 {
+  width: 14% !important;
+  left: 25% !important;
+  top: 43% !important;
+  transform: rotate(7deg);
+}
+.id3 {
+  width: 14.5% !important;
+  left: 33% !important;
+  top: 67.5% !important;
+  transform: rotateZ(7deg);
+  z-index: 2;
+}
+.id4 {
+  left: 45% !important;
+  top: 5% !important;
+  transform: rotate(-7deg);
+  transform: rotateZ(10deg);
+}
+.id5 {
+  width: 15% !important;
+  left: 57% !important;
+  top: 25% !important;
+  transform: rotate(-7deg);
+}
+.id6 {
+  width: 13% !important;
+  left: 60% !important;
+  top: 55% !important;
+  transform: rotate(-7deg);
+}
+.id7 {
+  width: 13% !important;
+  left: 50% !important;
+  z-index: 2;
+  top: 70% !important;
+  transform: rotate(-7deg);
+  animation: letter 4sec ease-in-out alternate infinite;
+}
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(242, 161, 161, 0.997);
+  border: none;
+  border-radius: 50px;
+  font-family: Product Sans;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+  top: 50%;
+  right: 0%;
+  color: white;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(229, 116, 45, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+/* //////////////new-html////////////////// */
+
+#page-1 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  background-image: url(./Images/hands-presenting-charity-essentials-donation-campaign.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#nav {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  font-family: Product Sans;
+}
+#logo {
+  text-transform: uppercase;
+  display: flex;
+  width: calc(100% / 4);
+  justify-content: center;
+  /* position: relative; */
+  /* transform: translateX(25px); */
+}
+#logo a,
+#nav-contact a {
+  text-decoration: none;
+}
+#logo a > h1 {
+  font-size: 1.2rem;
+  color: black;
+  font-family: no-name;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.75em;
+  flex-shrink: 0;
+}
+
+.nav2 {
+  border: 2px solid black;
+  width: calc(100% / 3);
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+.nav2 svg {
+  width: 5%;
+  align-self: center;
+}
+
+.divider {
+  height: 80%;
+  border-left: 2px solid black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  align-self: center;
+}
+
+#div2 {
+  height: 80%;
+  width: 60%;
+  border-bottom: 2px solid black;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  align-self: center;
+}
+.nav3 {
+  display: flex;
+  width: calc(100% / 4);
+  height: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav3 a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+#btn1 {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 7px 10px;
+  cursor: pointer;
+  background-color: rgb(221, 160, 170);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
